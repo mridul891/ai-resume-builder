@@ -3,7 +3,7 @@ import logo from "../assets/logo.svg";
 import { Link } from "react-router-dom";
 import { UserButton, useUser } from "@clerk/clerk-react";
 const Header = () => {
-  const { user, isSignedIn } = useUser();
+  const {  isSignedIn } = useUser();
   return (
     <div className="p-3 px-5 flex justify-between items-center shadow-md">
       <Link to={"/"}>
